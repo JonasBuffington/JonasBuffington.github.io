@@ -36,6 +36,7 @@ plugins:
 # SEO & content
 permalink: pretty
 excerpt_separator: "<!--more-->"
+show_excerpts: true
 
 # Author metadata (used by SEO tag)
 author:
