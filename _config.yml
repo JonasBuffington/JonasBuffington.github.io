@@ -23,13 +23,23 @@ description: >- # this means to ignore newlines until "baseurl:"
   A software engineering log focused on building complex systems and navigating the world of AI-assisted development.
   I explore a disciplined approach to AI-assisted programming, prioritizing true understanding and learning.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jonasbuffington.github.io" # the base hostname & protocol for your site
 github_username: jonasbuffington
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO & content
+permalink: pretty
+excerpt_separator: "<!--more-->"
+
+# Author metadata (used by SEO tag)
+author:
+  name: "Jonas Buffington"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
