@@ -7,9 +7,13 @@
 
 // Custom: home page post excerpt preview
 .post-excerpt {
-  color: #666; // slightly fainter text
+  color: #9e9e9e; // slightly fainter text
   overflow: hidden;
   position: relative;
+
+  // Slightly smaller, calmer preview text
+  font-size: 0.95rem;
+  line-height: 1.5;
 
   // Multi-line clamp for modern browsers
   display: -webkit-box;
@@ -17,7 +21,7 @@
   -webkit-box-orient: vertical;
 
   // Fallback cap if line-clamp isn't supported
-  max-height: 4.8em; // fallback height (~3 lines)
+  max-height: 5.7em; // fallback height (~3 lines)
 
   // Gradient fade at the bottom to soften cutoff
 }
@@ -35,4 +39,21 @@
     rgba(253, 253, 253, 0) 35%,
     rgba(253, 253, 253, 1) 100%
   ); // matches Minima body background (#fdfdfd)
+}
+
+// Normalize headings within excerpts so they don't overpower titles
+.post-excerpt h1,
+.post-excerpt h2,
+.post-excerpt h3,
+.post-excerpt h4,
+.post-excerpt h5,
+.post-excerpt h6 {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 0 0.35em;
+}
+
+// Keep paragraphs tight in the preview area
+.post-excerpt p {
+  margin-bottom: 0.6em;
 }
