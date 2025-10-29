@@ -38,9 +38,8 @@ permalink: pretty
 excerpt_separator: "<!--more-->"
 show_excerpts: true
 
-# Author metadata (used by SEO tag)
-author:
-  name: "Jonas Buffington"
+# Author metadata intentionally omitted to prevent footer from rendering it.
+# jekyll-seo-tag will still work without an explicit site.author.
 
 # Exclude from processing.
 # The following items will not be processed, by default.
